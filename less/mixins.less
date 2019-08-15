@@ -1,1 +1,12 @@
 // Mixins in here
+.flex-container(@align-items: initial; @justify-content: initial) {
+    display: flex;
+    align-items: @align-items;
+    justify-content: @justify-content;
+}
+
+.max-container() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}

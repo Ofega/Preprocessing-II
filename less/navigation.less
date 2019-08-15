@@ -1,1 +1,42 @@
 // Navigation Styles here
+
+nav {
+    border-bottom: 1px dashed @navigation-border;
+
+    & > div {
+        .flex-container(center, space-between);
+        .max-container();
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li:last-of-type {
+        a {
+            padding-right: 0
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: 2.5rem 2rem;
+        text-decoration: none;
+        font-size: @body-fontSize;
+        color: @font-color;
+        font-weight: 500;
+
+        &:hover {
+            color: lighten(@font-color, 20%);
+        }
+
+        &.logo {
+            padding-left: 0;
+            font-size: 2.5rem;
+
+            &:hover {
+                color: @font-color;
+            }
+        }
+    }
+}
