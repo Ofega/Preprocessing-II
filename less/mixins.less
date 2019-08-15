@@ -10,3 +10,17 @@
     width: 100%;
     margin: 0 auto;
 }
+
+.btn() {
+    background: @button-bg;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    border-radius: 15px;
+    font-size: @body-fontSize;
+    max-width: 200px;
+    color: @main-bg;
+
+    &:hover {
+        background: lighten(@button-bg, 20%);
+    }
+}

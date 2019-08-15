@@ -263,6 +263,18 @@ nav a.logo:hover {
   justify-content: space-between;
 }
 .home .content-pick .destination {
-  width: 30%;
+  width: calc(30% - 15px);
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background: #17A2B8;
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  max-width: 200px;
+  color: #FFFFFF;
+}
+.home .content-pick .destination .btn:hover {
+  background: #4cd3e9;
 }
