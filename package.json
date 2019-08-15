@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "live-server",
-    "less": "less-watch-compile ./less ./css index.less"
+    "less": "less-watch-compiler ./less ./css index.less"
   },
   "dependencies": {
     "less": "^3.9.0",
