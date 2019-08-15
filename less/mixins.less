@@ -9,6 +9,10 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+
+    @media @mobile {
+        max-width: 500px;
+    }
 }
 
 .btn() {
@@ -22,5 +26,9 @@
 
     &:hover {
         background: lighten(@button-bg, 20%);
+    }
+
+    @media @mobile {
+        max-width: 100%;
     }
 }

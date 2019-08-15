@@ -2,10 +2,15 @@
 
 nav {
     border-bottom: @borderline;
+    padding: @wrapperX;
 
     & > div {
         .flex-container(center, space-between);
         .max-container();
+
+        @media @mobile {
+            flex-direction: column;
+        }
     }
 
     ul {
@@ -14,7 +19,7 @@ nav {
 
     li:last-of-type {
         a {
-            padding-right: 0
+            padding-right: 0;
         }
     }
 
@@ -26,6 +31,10 @@ nav {
         color: @font-color;
         font-weight: 500;
 
+        @media @mobile {
+            padding: 1.5rem 2rem 2.5rem;
+        }
+
         &:hover {
             color: lighten(@font-color, 20%);
         }
@@ -35,6 +44,10 @@ nav {
 
             &:hover {
                 color: @font-color;
+            }
+
+            @media @mobile {
+                padding-bottom: 0;
             }
         }
     }
