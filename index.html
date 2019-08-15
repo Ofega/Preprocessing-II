@@ -3,9 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fun Bus Travel Agency - Solution</title>
-
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
@@ -89,6 +88,39 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <form>
+      <div>
+        <div class="flex-container">
+          <div class="input-field">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName">
+          </div>
+          <div class="input-field">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName">
+          </div>
+        </div>
+        
+        <div class="flex-container">
+          <div class="input-field">
+            <label for="emailAddress">Email</label>
+            <input type="email" name="emailAddress" id="emailAddress">
+          </div>
+          <div class="input-field">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber">
+          </div>
+        </div>
+        
+        <div class="input-field full-width">
+          <label for="message">Contact Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Submit Message</button>
+      </div>
+    </form>
   </div><!-- container -->
 
   <footer class="footer">
