@@ -1,7 +1,7 @@
 // Navigation Styles here
 
 nav {
-    border-bottom: 1px dashed @navigation-border;
+    border-bottom: @borderline;
 
     & > div {
         .flex-container(center, space-between);
@@ -32,7 +32,6 @@ nav {
 
         &.logo {
             padding-left: 0;
-            font-size: 2.5rem;
 
             &:hover {
                 color: @font-color;

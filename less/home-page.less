@@ -1,13 +1,18 @@
 .home {
 
+  header {
+    .intro-section {
+      padding: @wrapperY;
+      border-bottom: @borderline;
+    }
+  }
+
   .content-section {
-    margin: 30px 0;
+    margin: @sectionGutter 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -24,8 +29,8 @@
   }
 
   .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: @sectionGutter;
+    border-bottom: @borderline;
 
     .text-content {
       padding-left: 1%;
@@ -40,7 +45,7 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto @sectionGutter;
 
     img {
       border-radius: 10px;
@@ -48,14 +53,14 @@
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    padding-top: @sectionGutter;
+    border-top: @borderline;
     display: flex;
     justify-content: space-between;
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: @sectionGutter;
     }
   }
 }// home
