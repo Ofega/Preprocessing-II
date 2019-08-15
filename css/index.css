@@ -179,7 +179,6 @@ img {
 }
 nav {
   border-bottom: 2px dashed #C0C0C0;
-  padding: 0 2rem;
 }
 nav > div {
   display: flex;
@@ -188,6 +187,7 @@ nav > div {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 @media (max-width: 750px) {
   nav > div {
@@ -313,7 +313,7 @@ nav a.logo:hover {
   }
 }
 .home .content-pick .destination {
-  width: calc(30% - 15px);
+  width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 750px) {
