@@ -1,0 +1,68 @@
+
+form {
+    padding: @wrapperY;
+    border-top: @borderline;
+
+    & > div {
+        max-width: 75%;
+        margin: 0 auto;
+
+        @media @mobile {
+            max-width: 100%;
+        }
+    }
+
+    .flex-container {
+        .flex-container(flex-start, space-between);
+
+        @media @mobile {
+            flex-direction: column;
+        }
+    }
+
+    .input-field {
+        width: calc(50% - 15px);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+
+        @media @mobile {
+            width: 100%;
+        }
+
+        &.full-width {
+            width: 100%;
+        }
+
+        label {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: .75rem;
+            margin-bottom: .5rem;
+            color: rgba(0, 0, 0, .75)
+        }
+          
+        input {
+            min-height: 40px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 0 1rem;
+        }
+          
+        textarea {
+            min-height: 150px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 1rem;
+            resize: none;
+        }
+    }
+
+    .btn {
+        .btn();
+        border: none;
+        outline: none;
+    }
+}

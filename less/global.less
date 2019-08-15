@@ -4,14 +4,15 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: @body-font;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: @heading-font;
 }
 
 h1 {
@@ -30,8 +31,12 @@ h4 {
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: @body-fontSize;
   padding-bottom: 10px;
+
+  &.no-padding {
+    padding-bottom: 0;
+  }
 }
 
 img {
@@ -40,7 +45,6 @@ img {
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  padding: @wrapperX;
+  .max-container();
 }
